@@ -1,34 +1,34 @@
 Controle de Servomotor por PWM no RP2040
 
-Descrição:
-Este projeto implementa o controle de um servomotor utilizando PWM (Pulse Width Modulation) no microcontrolador RP2040. A lógica do sistema permite a movimentação do servomotor para posições definidas (0°, 90° e 180°) e a transição suave entre esses ângulos.
+DescriÃ§Ã£o:
+Este projeto implementa o controle de um servomotor utilizando PWM (Pulse Width Modulation) no microcontrolador RP2040. A lÃ³gica do sistema permite a movimentaÃ§Ã£o do servomotor para posiÃ§Ãµes definidas (0Â°, 90Â° e 180Â°) e a transiÃ§Ã£o suave entre esses Ã¢ngulos.
 
-Além disso, um LED RGB (GPIO 12) é controlado junto com o servomotor, possibilitando a observação do efeito do PWM na iluminação do LED.
+AlÃ©m disso, um LED RGB (GPIO 12) Ã© controlado junto com o servomotor, possibilitando a observaÃ§Ã£o do efeito do PWM na iluminaÃ§Ã£o do LED.
 
-Componentes Necessários:
-BitDogLab (com LED RGB e GPIOs configuráveis)
+Componentes NecessÃ¡rios:
+BitDogLab (com LED RGB e GPIOs configurÃ¡veis)
 Microcontrolador RP2040
 Bibliotecas do Pico SDK para controle de PWM
-Simulador de eletrônica online Wokwi
+Simulador de eletrÃ´nica online Wokwi
 
 Funcionamento:
 Controle do Servomotor
-A GPIO 22 foi configurada para gerar um sinal PWM de 50Hz (período de 20ms).
-O PWM controla a posição do servomotor de acordo com a largura do pulso:
-500µs ? 0 graus
-1470µs ? 90 graus
-2400µs ? 180 graus
-Movimentação Periódica
-Após as posições fixas, o código implementa um movimento gradual entre 0° e 180°.
-O incremento do PWM é de ±5µs a cada 10ms, garantindo um movimento fluido e contínuo.
-Interação com o LED RGB
-O LED RGB (GPIO 12) responde às variações do PWM.
-O comportamento observado mostra que a intensidade do LED varia conforme o sinal PWM, criando um efeito de transição suave.
+A GPIO 22 foi configurada para gerar um sinal PWM de 50Hz (perÃ­odo de 20ms).
+O PWM controla a posiÃ§Ã£o do servomotor de acordo com a largura do pulso:
+500Âµs - 0 graus
+1470Âµs - 90 graus
+2400Âµs - 180 graus
+MovimentaÃ§Ã£o PeriÃ³dica
+ApÃ³s as posiÃ§Ãµes fixas, o cÃ³digo implementa um movimento gradual entre 0Â° e 180Â°.
+O incremento do PWM Ã© de Â±5Âµs a cada 10ms, garantindo um movimento fluido e contÃ­nuo.
+InteraÃ§Ã£o com o LED RGB
+O LED RGB (GPIO 12) responde Ã s variaÃ§Ãµes do PWM.
+O comportamento observado mostra que a intensidade do LED varia conforme o sinal PWM, criando um efeito de transiÃ§Ã£o suave.
 
-Estrutura do Código:
-Inicialização: Configura os pinos GPIO, PWM e interrupções.
-Controle de Posições Fixas: Define os pulsos PWM para 0°, 90° e 180°.
-Movimentação Suave: Alterna o PWM de forma progressiva entre os ângulos.
+Estrutura do CÃ³digo:
+InicializaÃ§Ã£o: Configura os pinos GPIO, PWM e interrupÃ§Ãµes.
+Controle de PosiÃ§Ãµes Fixas: Define os pulsos PWM para 0Â°, 90Â° e 180Â°.
+MovimentaÃ§Ã£o Suave: Alterna o PWM de forma progressiva entre os Ã¢ngulos.
 
 Autor:
 Mateus Moreira da Silva
