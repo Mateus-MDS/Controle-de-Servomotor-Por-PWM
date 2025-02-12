@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/controle_de_servomotor.hex'
+elf = 'build/controle_de_servomotor.elf'
