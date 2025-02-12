@@ -34,3 +34,5 @@ Autor:
 Mateus Moreira da Silva
 
 Este projeto foi desenvolvido e testado utilizando a BitDogLab com o microcontrolador RP2040.
+
+link video explicativo: https://youtu.be/hxQdm_p0hyI
